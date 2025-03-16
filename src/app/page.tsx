@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Home() {
   return (
@@ -15,14 +15,14 @@ export default function Home() {
             {"Artist"}
           </p>
         </div>
-        <Image
+        {/* <Image
           className="border-4 h-[60%] sm:h-[130%] w-auto border-[#B2A4D4]"
           src="./asset/banner/character.png"
           alt="Next.js logo"
           width={400}
           height={38}
           priority
-        />
+        /> */}
       </main>
       <footer className="flex bottom-4 right-0 left-0 items-center justify-center">
         <div className="flex gap-1 cursor-pointer">
