@@ -4,7 +4,7 @@ const isProduction = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  basePath: isProduction ? "/web" : "",
+  // basePath: isProduction ? "/web" : "",
   // output: "export",
   // distDir: "dist",
   images: {
