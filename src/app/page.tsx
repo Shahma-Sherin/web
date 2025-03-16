@@ -22,7 +22,7 @@ export default function Home() {
           src="/asset/banner/character.png"
           alt="Next.js logo"
           width={400}
-          height={38}
+          height={39}
           priority
         />
       </main>
