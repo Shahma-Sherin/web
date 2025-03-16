@@ -3,20 +3,20 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="w-full h-screen flex flex-col justify-between py-4">
-      <header className="p-4 text-2xl font-bold flex flex-col justify-between shadow-fuchsia-400">
+      <header className="p-4 text-2xl font-bold flex flex-col justify-between shadow-[#B2A4D4]">
         {"Portfolio "}
       </header>
       <main className="flex flex-col sm:flex-row justify-around items-center">
-        <div className="">
-          <p className="text-3xl sm:text-6xl font-extrabold hover:scale-110 duration-400 ease-in-out">
+        <div className="flex flex-col gap-2">
+          <p className="text-3xl sm:text-6xl font-extrabold hover:scale-110 duration-400 ease-in-out uppercase">
             {"Shahma Sherin K"}
           </p>
-          <p className="text-2xl text-center tracking-widest font-extrabold hover:scale-110 duration-400 ease-in-out">
+          <p className="text-2xl text-center tracking-widest font-extrabold hover:scale-110 duration-400 ease-in-out uppercase">
             {"Artist"}
           </p>
         </div>
         <Image
-          className="border-4 h-[60%] sm:h-[130%] w-auto border-fuchsia-300"
+          className="border-4 h-[60%] sm:h-[130%] w-auto border-[#B2A4D4]"
           src="/asset/banner/character.png"
           alt="Next.js logo"
           width={400}
