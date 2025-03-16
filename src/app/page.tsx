@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <Image
           className="border-4 h-[60%] sm:h-[130%] w-auto border-[#B2A4D4]"
-          src="/asset/banner/character.png"
+          src="./asset/banner/character.png"
           alt="Next.js logo"
           width={400}
           height={38}
