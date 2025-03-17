@@ -1,10 +1,9 @@
 @import "tailwindcss";
 
-
 :root {
   --background: #ffffff;
   /* --foreground: #171717; */
-  --foreground: #B2A4D4;
+  --foreground: #b2a4d4;
 }
 
 @theme inline {
@@ -18,7 +17,7 @@
   :root {
     /* --background: #0a0a0a; */
     --background: #ededed;
-    --foreground: #B2A4D4;
+    --foreground: #b2a4d4;
   }
 }
 
@@ -26,10 +25,15 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Noto Sans Hanunoo", sans-serif;
-
 }
 
-
 .banner-text {
-  @apply text-3xl;
+  @apply text-3xl sm:text-6xl font-extrabold hover:scale-110 duration-400 ease-in-out;
+}
+.sub-banner-text {
+  @apply text-2xl  tracking-widest font-extrabold hover:scale-110 duration-400 ease-in-out;
+}
+
+.title-text {
+  @apply text-2xl font-bold;
 }

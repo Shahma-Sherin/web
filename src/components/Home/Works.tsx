@@ -1,20 +1,25 @@
 "use client";
 import Image from "next/image";
 import works from "../../../public/data/works.json";
-import { lazy } from "react";
+import { useEffect, useState } from "react";
 import { WorkType } from "@/appTypes";
-const ReactPlayer = lazy(() => import("react-player"));
+import ReactPlayer from "react-player";
+// const ReactPlayer = lazy(() => import("react-player"));
 
 export default function Works() {
   const { sketch, video } = works;
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
-    <div className="w-full h-screen flex flex-col py-4 ">
-      <header className="p-6 text-2xl font-bold flex text-white  bg-[#B2A4D4] flex-col">
-        {"Works "}
-        {/* <hr className="h-1 w-full bg-[#B2A4D4]" /> */}
-      </header>
-      <main className="flex items-start flex-col p-6">
+    <div className="w-full flex flex-col">
+      <div className="p-6 text-2xl font-bold flex text-white  bg-[#B2A4D4] flex-col">
+        {"Works"}
+      </div>
+      <div className="flex items-start flex-col p-6">
         <div className="p-6 text-2xl font-bold flex ">{"Sketch"}</div>
         <div className="grid grid-cols-1 gap-2 w-full md:grid-cols-4">
           {sketch.map((item: WorkType) => {
@@ -36,27 +41,29 @@ export default function Works() {
           {video.map((item: WorkType, index) => {
             return (
               <div key={index} className="w-full flex justify-center">
-                <ReactPlayer
-                  url={item.url}
-                  height={400}
-                  style={{
-                    borderRadius: "16px",
-                    overflow: "hidden",
-                    border: "4px solid #B2A4D4", //
-                  }}
-                  loop={true}
-                  width={240}
-                  config={{
-                    youtube: {
-                      playerVars: { showinfo: 1 },
-                    },
-                  }}
-                />
+                {isClient && (
+                  <ReactPlayer
+                    url={item.url}
+                    height={400}
+                    style={{
+                      borderRadius: "16px",
+                      overflow: "hidden",
+                      border: "4px solid #B2A4D4", //
+                    }}
+                    loop={true}
+                    width={240}
+                    config={{
+                      youtube: {
+                        playerVars: { showinfo: 1 },
+                      },
+                    }}
+                  />
+                )}
               </div>
             );
           })}
         </div>
-      </main>
+      </div>
     </div>
   );
 }
