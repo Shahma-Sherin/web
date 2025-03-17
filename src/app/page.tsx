@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="w-full h-screen flex flex-col justify-between py-4 bg-[url('/asset/banner/decor.png')] bg-no-repeat bg-cover bg-center">
+    <div className="w-full h-screen flex flex-col justify-between py-4 bg-[url('/asset/banner/decor.png')] bg-no-repeat bg-bottom sm:bg-cover sm:bg-center">
       <header className="p-4 text-2xl font-bold flex flex-col justify-between shadow-[#B2A4D4]">
         {"Portfolio "}
       </header>
