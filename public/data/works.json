@@ -2,7 +2,8 @@
   "sketch": [
     {
       "id": 1,
-      "url": "/asset/banner/character.png"
+      "url": "/asset/banner/character.png",
+      "title": "Image 1"
     }
   ],
   "video": [

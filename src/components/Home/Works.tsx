@@ -1,7 +1,8 @@
 "use client";
+import Image from "next/image";
 import works from "../../../public/data/works.json";
-import { WorkType } from "@/appTypes";
 import { lazy } from "react";
+import { WorkType } from "@/appTypes";
 const ReactPlayer = lazy(() => import("react-player"));
 
 export default function Works() {
@@ -16,12 +17,14 @@ export default function Works() {
       <main className="flex items-start flex-col p-6">
         <div className="p-6 text-2xl font-bold flex ">{"Sketch"}</div>
         <div className="grid grid-cols-1 gap-2 w-full md:grid-cols-4">
-          {sketch.map((item: any, index) => {
+          {sketch.map((item: WorkType) => {
             return (
-              <div key={index}>
-                <img
+              <div key={item.id}>
+                <Image
                   className="h-70 w-full max-w-full rounded-lg object-contain object-center border-2 border-[#B2A4D4]"
                   src={item.url}
+                  width={30}
+                  height={30}
                   alt={item.title}
                 />
               </div>
@@ -30,7 +33,7 @@ export default function Works() {
         </div>
         <div className="p-6 text-2xl font-bold flex ">{"Video"}</div>
         <div className="grid grid-cols-1 items-center gap-2 w-full md:grid-cols-5">
-          {video.map((item: any, index) => {
+          {video.map((item: WorkType, index) => {
             return (
               <div key={index} className="w-full flex justify-center">
                 <ReactPlayer
