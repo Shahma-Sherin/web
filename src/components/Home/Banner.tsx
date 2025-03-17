@@ -6,8 +6,8 @@ export default function Banner() {
     <div className="min-h-screen h-screen py-12 flex flex-col justify-between bg-[url('/asset/banner/decor.png')] bg-no-repeat bg-bottom sm:bg-cover sm:bg-center">
       <div className="flex flex-col sm:flex-row gap-2 justify-around items-center h-full">
         <div className="flex flex-col gap-2">
-          <div className="banner-text uppercase">{"Shahma Sherin K"}</div>
-          <div className="text-center sub-banner-text uppercase">
+          <div className="banner-text font-bold uppercase">{"Shahma Sherin K"}</div>
+          <div className="text-center sub-banner-text font-bold uppercase">
             {"Artist"}
           </div>
         </div>
