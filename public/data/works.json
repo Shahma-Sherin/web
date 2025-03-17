@@ -1,0 +1,30 @@
+{
+  "sketch": [
+    {
+      "id": 1,
+      "url": "/asset/banner/character.png"
+    }
+  ],
+  "video": [
+    {
+      "id": 1,
+      "url": "https://youtube.com/shorts/c1rZgQP0SLM",
+      "title": "Wall Painting"
+    },
+    {
+      "id": 2,
+      "url": "https://youtube.com/shorts/8xIq44R-xWY?si=1SIwoZIJB_L0knRp",
+      "title": "Geetha"
+    },
+    {
+      "id": 3,
+      "url": "https://youtube.com/shorts/PcL7dvtXPb8?si=dgVrkp9M8Kijs6OL",
+      "title": "College Watch Man"
+    },
+    {
+      "id": 4,
+      "url": "https://youtube.com/shorts/98H4MojHq3o?si=pgrBrOKLz4nbzgYm",
+      "title": "Mohan lal "
+    }
+  ]
+}
