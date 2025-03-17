@@ -3,18 +3,21 @@
     {
       "id": 1,
       "url": "/asset/banner/character.png",
-      "title": "Image 1"
+      "title": "Image 1",
+      "isListed": true
     }
   ],
   "video": [
     {
       "id": 1,
       "url": "https://youtube.com/shorts/c1rZgQP0SLM",
-      "title": "Wall Painting"
+      "isListed": true,
+      "title": "Wall Painting"  
     },
     {
       "id": 2,
       "url": "https://youtube.com/shorts/8xIq44R-xWY?si=1SIwoZIJB_L0knRp",
+      "isListed": true,
       "title": "Geetha"
     },
     {
