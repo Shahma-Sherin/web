@@ -32,7 +32,7 @@ export default function Works() {
           })}
         </div>
         <div className="p-6 text-2xl font-bold flex ">{"Video"}</div>
-        <div className="grid grid-cols-1 items-center gap-2 w-full md:grid-cols-5">
+        <div className="grid grid-cols-1 items-center gap-2 w-full md:grid-cols-4">
           {video.map((item: WorkType, index) => {
             return (
               <div key={index} className="w-full flex justify-center">
