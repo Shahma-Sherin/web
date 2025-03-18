@@ -5,7 +5,7 @@ export default function Video() {
   const { video } = works;
   return (
     <>
-      <Videos videos={video} />
+      <Videos isPage videos={video} />
     </>
   );
 }

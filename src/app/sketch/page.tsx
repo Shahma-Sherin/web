@@ -4,7 +4,7 @@ export default function Sketch() {
   const { sketch } = works;
   return (
     <>
-      <Sketches sketches={sketch} />
+      <Sketches isPage sketches={sketch} />
     </>
   );
 }

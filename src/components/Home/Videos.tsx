@@ -3,8 +3,16 @@
 import { VideosType, VideoType } from "@/appTypes";
 import { useEffect, useState } from "react";
 import ReactPlayer from "react-player";
+import Link from "next/link";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
-export default function Videos({ videos }: { videos: VideosType }) {
+export default function Videos({
+  videos,
+  isPage = false,
+}: {
+  videos: VideosType;
+  isPage?: boolean;
+}) {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -12,8 +20,24 @@ export default function Videos({ videos }: { videos: VideosType }) {
   }, []);
 
   return (
-    <div className="flex items-start flex-col p-6">
-      <div className="p-6 text-2xl font-bold flex ">{"Video"}</div>
+    <div className="flex items-start flex-col p-6" id="video">
+      <div className="flex justify-between w-full">
+        <Link
+          href={"/#video"}
+          className="p-6 text-2xl font-bold flex justify-center items-center"
+        >
+          {isPage && <ArrowBackIosIcon />}
+          {"Video"}
+        </Link>
+        {!isPage && (
+          <Link
+            href={"/video"}
+            className="p-6 text-2xl font-bold flex hover:underline"
+          >
+            {"View More"}
+          </Link>
+        )}
+      </div>
       <div className="grid grid-cols-1 items-center gap-2 w-full md:grid-cols-4">
         {videos.map((item: VideoType, index) => {
           return (
