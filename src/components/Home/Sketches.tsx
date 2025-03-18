@@ -23,7 +23,7 @@ export default function Sketches({
         {!isPage && (
           <Link
             href={"/sketch"}
-            className="p-6 text-2xl font-bold flex hover:underline"
+            className="p-6 text-xl font-bold flex hover:underline"
           >
             {"View More"}
           </Link>
