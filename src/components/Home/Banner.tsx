@@ -43,7 +43,7 @@ export default function Banner() {
           >
             <YouTubeIcon />
 
-            {" Youtube"}
+            {" YouTube"}
           </Link>
         </div>
       </div>

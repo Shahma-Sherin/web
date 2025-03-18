@@ -52,7 +52,7 @@ export default function Videos({
                     border: "4px solid #B2A4D4", //
                   }}
                   loop={true}
-                  width={240}
+                  width={300}
                   config={{
                     youtube: {
                       playerVars: { showinfo: 1 },
