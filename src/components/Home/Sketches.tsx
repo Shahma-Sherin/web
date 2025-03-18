@@ -52,12 +52,19 @@ export default function Sketches({
         })}
       </div>
       <div className="w-full flex justify-center">
-        {!isPage && (
+        {!isPage ? (
           <Link
             href={"/sketch"}
             className="p-4 text-xl font-bold flex hover:underline"
           >
             {"View More"}
+          </Link>
+        ) : (
+          <Link
+            href={"/"}
+            className="p-4 text-xl font-bold flex hover:underline justify-center"
+          >
+            <ArrowBackIosIcon /> {"Home"}
           </Link>
         )}
       </div>
