@@ -29,14 +29,6 @@ export default function Videos({
           {isPage && <ArrowBackIosIcon />}
           {"Video"}
         </Link>
-        {!isPage && (
-          <Link
-            href={"/video"}
-            className="p-6 text-xl font-bold flex hover:underline"
-          >
-            {"View More"}
-          </Link>
-        )}
       </div>
       <div className="grid grid-cols-1 items-center gap-2 w-full md:grid-cols-4">
         {videos.map((item: VideoType, index) => {
@@ -63,6 +55,16 @@ export default function Videos({
             </div>
           );
         })}
+      </div>
+      <div className="w-full flex justify-center">
+        {!isPage && (
+          <Link
+            href={"/video"}
+            className="p-4 text-xl font-bold flex hover:underline"
+          >
+            {"View More"}
+          </Link>
+        )}
       </div>
     </div>
   );

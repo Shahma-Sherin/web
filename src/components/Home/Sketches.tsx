@@ -13,7 +13,8 @@ export default function Sketches({
   sketches: SketchesType;
   isPage?: boolean;
 }) {
-  const [modal, setModal] = useState({ open: false, url: "", name: "" });
+  const [image, setImage] = useState<string | null>(null);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="flex items-start flex-col p-6" id="sketch">
       <div className="flex justify-between w-full">
@@ -24,14 +25,6 @@ export default function Sketches({
           {isPage && <ArrowBackIosIcon />}
           {"Sketch"}
         </Link>
-        {!isPage && (
-          <Link
-            href={"/sketch"}
-            className="p-6 text-xl font-bold flex hover:underline"
-          >
-            {"View More"}
-          </Link>
-        )}
       </div>
       <div className="grid grid-cols-1 gap-2 w-full md:grid-cols-4">
         {sketches.map((item: SketchType, i) => {
@@ -43,19 +36,30 @@ export default function Sketches({
                 width={30}
                 height={30}
                 alt={item.title}
-                onClick={() =>
-                  setModal({ open: true, url: item.url, name: item.title })
-                }
+                onClick={() => {
+                  setImage(item.url);
+                  setIsOpen(true);
+                }}
               />
               <ImageModal
-                src={modal.url}
-                alt={modal.name}
-                isOpen={modal.open}
-                onClose={() => setModal({ open: false, url: "", name: "" })}
+                src={image ?? ""}
+                alt={image ?? ""}
+                isOpen={isOpen}
+                onClose={() => setIsOpen(false)}
               />
             </div>
           );
         })}
+      </div>
+      <div className="w-full flex justify-center">
+        {!isPage && (
+          <Link
+            href={"/sketch"}
+            className="p-4 text-xl font-bold flex hover:underline"
+          >
+            {"View More"}
+          </Link>
+        )}
       </div>
     </div>
   );
