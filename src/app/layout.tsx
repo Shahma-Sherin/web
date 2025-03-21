@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Poiret_One } from "next/font/google";
+import LoadingScreen from "@/components/LoadingScreen";
 const inter = Poiret_One({
   subsets: ["latin"], // Optional: Choose subsets
   weight: "400", // Optional: Choose font weights
@@ -32,7 +33,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head></head>
-      <body className={`${inter.className} antialiased`}>{children}</body>
+      <body className={`${inter.className} antialiased`}>
+        <LoadingScreen />
+        {children}
+      </body>
     </html>
   );
 }
