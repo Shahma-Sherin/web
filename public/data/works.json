@@ -1,107 +1,96 @@
 {
   "sketch": [
     {
-      "id": 1,
       "url": "/asset/sketches/soubin.jpg",
       "title": "soubin",
       "isListed": true
     },
     {
-      "id": 2,
       "url": "/asset/sketches/nani.jpg",
       "title": "nani",
       "isListed": true
     },
     {
-      "id": 3,
       "url": "/asset/sketches/geethu.jpg",
       "title": "geethu",
       "isListed": true
     },
 
     {
-      "id": 4,
       "url": "/asset/sketches/couple.jpg",
       "title": "couple 1",
       "isListed": false
     },
     {
-      "id": 5,
       "url": "/asset/sketches/elders 1.jpg",
       "title": "elders 1",
       "isListed": false
     },
     {
-      "id": 6,
       "url": "/asset/sketches/elders 2.jpg",
       "title": "elders 2",
       "isListed": false
     },
     {
-      "id": 7,
       "url": "/asset/sketches/girlwithbook.jpg",
       "title": "girlwithbook",
       "isListed": true
     },
     {
-      "id": 8,
       "url": "/asset/sketches/girls.jpg",
       "title": "girls",
       "isListed": false
     },
     {
-      "id": 9,
       "url": "/asset/sketches/marrage 2.jpg",
       "title": "marrage 2",
       "isListed": false
     },
     {
-      "id": 10,
       "url": "/asset/sketches/marrage 1.jpg",
       "title": "marrage 1",
       "isListed": false
     },
     {
-      "id": 11,
       "url": "/asset/sketches/youth 2.jpg",
       "title": "youth 2",
       "isListed": false
     },
     {
-      "id": 12,
       "url": "/asset/sketches/youth 1.jpg",
       "title": "youth 1",
       "isListed": false
     }
   ],
-  "video": [  {
-      "id": 1,
+  "video": [
+    {
       "url": "https://youtube.com/shorts/s1UFy-CSp6w?si=u9v1mkHjCLac2mYR",
       "isListed": true,
       "title": "Person Sketch"
     },
     {
-      "id": 2,
+      "url": "https://youtube.com/shorts/8M_Mmou_ABo",
+      "isListed": true,
+      "title": "Live sketch "
+    },
+    {
       "url": "https://youtube.com/shorts/c1rZgQP0SLM",
       "isListed": true,
       "title": "Wall Painting"
     },
     {
-      "id": 3,
       "url": "https://youtube.com/shorts/8xIq44R-xWY?si=1SIwoZIJB_L0knRp",
       "isListed": true,
       "title": "Geetha"
     },
     {
-      "id": 4,
       "url": "https://youtube.com/shorts/PcL7dvtXPb8?si=dgVrkp9M8Kijs6OL",
       "isListed": false,
       "title": "College Watch Man"
     },
     {
-      "id": 5,
       "url": "https://youtube.com/shorts/98H4MojHq3o?si=pgrBrOKLz4nbzgYm",
-      "isListed": true,
+      "isListed": false,
       "title": "Mohan lal "
     }
   ]
