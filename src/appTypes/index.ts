@@ -15,3 +15,13 @@ export type SketchType = {
 };
 
 export type SketchesType = SketchType[];
+
+
+
+export type DigitalArtType = {
+  title: string;
+  isListed?: boolean;
+  url: string;
+};
+
+export type DigitalArtsType = SketchType[];
