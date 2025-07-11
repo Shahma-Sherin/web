@@ -64,6 +64,11 @@
   ],
   "video": [
     {
+      "url": "https://www.youtube.com/shorts/elceV93rs4A",
+      "isListed": true,
+      "title": "Person Sketch"
+    },
+    {
       "url": "https://youtube.com/shorts/hVKvdYij3VY",
       "isListed": true,
       "title": "Person Sketch"
@@ -75,7 +80,7 @@
     },
     {
       "url": "https://youtube.com/shorts/aNzqW8JUU5Q",
-      "isListed": true,
+      "isListed": false,
       "title": "Person Sketch"
     },
     {
