@@ -1,5 +1,10 @@
 [
   {
+    "title": "Dg5",
+    "url": "/asset/digitalArt/dg5.jpeg",
+    "isListed": true
+  },
+  {
     "title": "Dg3",
     "url": "/asset/digitalArt/dg3.jpeg",
     "isListed": true
@@ -7,7 +12,7 @@
   {
     "title": "Dg2",
     "url": "/asset/digitalArt/dg2.jpeg",
-    "isListed": true
+    "isListed": false
   },
   {
     "title": "Dg4",
