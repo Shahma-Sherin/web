@@ -6,7 +6,7 @@ import Videos from "./Videos";
 import digitalArts from "../../../public/data/digitalArt.json";
 
 export default function Works() {
-  const [{ sketch, video }] = works;
+  const { sketch, video } = works;
 
   return (
     <div className="w-full flex flex-col">
